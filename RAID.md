@@ -64,6 +64,11 @@ Entrambe le configurazioni resistono a guasti di un solo disco senza problemi. M
 
 Dunque con il RAID 0+1 la probabilità che una seconda rottura porti alla perdita dati è del 66% (2 possibili casi di rottura su 6), mentre con il RAID 10 abbiamo il 33% di probabilità di rottura. **Questo divario aumenta all'aumentare del numero di dischi, dunque il RAID 0+1 è sempre più pericoloso.**
 
+# Link utili
+
+* Calcolatore RAID: http://www.raid-calculator.com/
+* Confronta lo spazio usato/disponibile nei vari livelli di RAID: https://www.synology.com/it-it/support/RAID_calculator
+
 # Riferimenti
 
 * https://www.reddit.com/r/sysadmin/comments/6pw36x/til_why_we_should_stop_using_raid_5/
