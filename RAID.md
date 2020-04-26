@@ -20,6 +20,10 @@ In presenza di dischi **piccoli** (eg. più o meno fino al tier dei 500GB) il RA
 
 In presenza di dischi **medio/grandi** (1TB o più) il RAID 5 **è pericoloso**, perché la probabilità che un altro disco del RAID si rompa durante il resync dell'array aumenta al crescere della durata (che cresce in base alla dimensione dei dischi), e con dimensioni maggiori di qualche terabyte la probabilità è talmente alta da vanificare l'uso del RAID. **In questi casi le uniche opzioni sono RAID 1 o RAID 10**, a seconda delle performance in lettura, livelli di protezione desiderati e numero di dischi disponibili.
 
+## Qual è il livello RAID migliore per dischi SSD?
+
+Data l'enorme velocità di un disco SSD, in genere si preferisce tendere verso un RAID 1 o 10. Bisogna ricordarsi che i RAID tendono ad amplificare il numero di scritture, ed i dischi SSD hanno un numero di scritture limitate. Dunque, a livello industriale è necessario utilizzare dischi SSD costruiti appositamente per lo storage, con un numero di scritture enormemente più alto della media.
+
 ## Disco hot-spare? Si o no?
 
 **E' altamente consigliato**. Il disco __hot-spare__ serve perché il tempo che intercorre tra la rottura del disco e l'arrivo del disco nuovo potrebbe essere fatale per l'array. Un disco __hot-spare__ entra in funzione subito, permette all'array di sincronizzarsi e rimanere nello stato di "pericolo" per il solo tempo necessario al resync (tempo che comunque va speso), mentre il nuovo disco può arrivare con tutta calma e diventare il nuovo __hot-spare__.
