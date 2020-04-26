@@ -9,3 +9,4 @@ Per collaborare, o per dirci che non concordi su una parte, entra in contatto co
 ## Categorie
 
 * [RAID](RAID.md)
+* [Windows](Windows.md)
