@@ -67,6 +67,7 @@ Dunque con il RAID 0+1 la probabilità che una seconda rottura porti alla perdit
 # Link utili
 
 * Calcolatore RAID: http://www.raid-calculator.com/
+* Calcolatore probabilità fallimenti RAID: http://www.raid-failure.com/
 * Confronta lo spazio usato/disponibile nei vari livelli di RAID: https://www.synology.com/it-it/support/RAID_calculator
 
 # Riferimenti
